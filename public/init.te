@@ -506,4 +506,4 @@ neverallow init servicemanager:service_manager list;
 neverallow init shell_data_file:dir { write add_name remove_name };
 
 # Init should not access sysfs node that are not explicitly labeled.
-neverallow init sysfs:file { open read write };
+neverallow init sysfs:file write;
